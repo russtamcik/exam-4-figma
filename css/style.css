@@ -2022,7 +2022,7 @@ a {
     background-color: #fff;
     width: 100%;
     position: fixed;
-    z-index: 5;
+    z-index: 10;
     bottom: 0;
   }
 }/*# sourceMappingURL=style.css.map */
