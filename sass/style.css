@@ -1,0 +1,2028 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fbf8ec;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 30px;
+}
+.header .wrapper .logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header .wrapper .btn button {
+  padding: 13px;
+  color: var(--main-on-secondary, #FFF);
+  text-align: center;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  background-color: #70C05B;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 4px;
+}
+.header .wrapper .btn button::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("/assets/icons/menu.svg");
+  background-size: cover;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.header .wrapper .poisk input[type=text] {
+  max-width: 347px;
+  box-sizing: border-box;
+  border: 2px solid #70C05B;
+  border-radius: 4px;
+  background-color: white;
+  background-image: url("/assets/icons/search.svg");
+  background-position: 290px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 100px 12px 20px;
+  color: var(--grayscale-hard, #8F8F8F);
+  font-size: 16px;
+  font-family: Rubik;
+  font-weight: 400;
+  line-height: 150%;
+}
+.header .wrapper .icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.header .wrapper .icons p {
+  color: var(--main-on-surface, #414141);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.header .wrapper .icons .heart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.header .wrapper .icons .prod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.header .wrapper .icons .korz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.header .wrapper .avatar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header .wrapper .avatar p {
+  color: var(--on-surface, #232323);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.header2 {
+  display: none;
+}
+
+.header3 {
+  display: none;
+}
+
+.section1 {
+  background-image: url("/assets/Images/rangba-rang.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+.section1 .wrapper .back .food {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+.section1 .wrapper .back h1 {
+  max-width: 751px;
+  color: var(--main-on-surface, #414141);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.section2 .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.section2 .wrap .pro {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section2 .wrap h3 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section2 .wrap p {
+  color: var(--grayscale-hardest, #606060);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.section3 .card {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 40px;
+}
+.section3 .card .card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: var(--main-surface, #FFF);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.section3 .card .card1 .wrap {
+  padding: 8px;
+  width: 100%;
+}
+.section3 .card .card1 .wrap .yoz {
+  display: flex;
+  justify-content: space-between;
+}
+.section3 .card .card1 .wrap .yoz .yozuvla .yozuv {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section3 .card .card1 .wrap .yoz .yozuvla .yozuv h2 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section3 .card .card1 .wrap .yoz .yozuvla .yozuv p {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section3 .card .card1 .wrap .yoz .yozuvla span {
+  color: var(--grayscale-light, #BFBFBF);
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card1 .wrap .yoz .yozuvla2 .yozuv2 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section3 .card .card1 .wrap .yoz .yozuvla2 .yozuv2 h2 {
+  color: var(--grayscale-hardest, #606060);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card1 .wrap .yoz .yozuvla2 .yozuv2 p {
+  color: var(--grayscale-hardest, #606060);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card1 .wrap .yoz .yozuvla2 span {
+  color: var(--grayscale-light, #BFBFBF);
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card1 .wrap h3 {
+  margin-top: 8px;
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card1 .wrap .rating {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section3 .card .card1 .wrap .btn {
+  margin-top: 8px;
+}
+.section3 .card .card1 .wrap .btn button {
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+  color: #70C05B;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.section3 .card .card1 .wrap .btn button:hover {
+  background-color: #FF6633;
+  color: #fff;
+}
+.section3 .card .card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: var(--main-surface, #FFF);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.section3 .card .card2 .wrap {
+  padding: 8px;
+  width: 100%;
+}
+.section3 .card .card2 .wrap .yoz {
+  display: flex;
+  justify-content: space-between;
+}
+.section3 .card .card2 .wrap .yoz .yozuvla .yozuv {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section3 .card .card2 .wrap .yoz .yozuvla .yozuv h2 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section3 .card .card2 .wrap .yoz .yozuvla .yozuv p {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section3 .card .card2 .wrap .yoz .yozuvla span {
+  color: var(--grayscale-light, #BFBFBF);
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card2 .wrap .yoz .yozuvla2 .yozuv2 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section3 .card .card2 .wrap .yoz .yozuvla2 .yozuv2 h2 {
+  color: var(--grayscale-hardest, #606060);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card2 .wrap .yoz .yozuvla2 .yozuv2 p {
+  color: var(--grayscale-hardest, #606060);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card2 .wrap .yoz .yozuvla2 span {
+  color: var(--grayscale-light, #BFBFBF);
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card2 .wrap h3 {
+  margin-top: 8px;
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card2 .wrap .rating {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section3 .card .card2 .wrap .btn {
+  margin-top: 8px;
+}
+.section3 .card .card2 .wrap .btn button {
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+  color: #70C05B;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.section3 .card .card2 .wrap .btn button:hover {
+  background-color: #FF6633;
+  color: #fff;
+}
+.section3 .card .card3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: var(--main-surface, #FFF);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.section3 .card .card3 .wrap {
+  padding: 8px;
+  width: 100%;
+}
+.section3 .card .card3 .wrap .yoz {
+  display: flex;
+  justify-content: space-between;
+}
+.section3 .card .card3 .wrap .yoz .yozuvla .yozuv {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section3 .card .card3 .wrap .yoz .yozuvla .yozuv h2 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section3 .card .card3 .wrap .yoz .yozuvla .yozuv p {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section3 .card .card3 .wrap .yoz .yozuvla span {
+  color: var(--grayscale-light, #BFBFBF);
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card3 .wrap .yoz .yozuvla2 .yozuv2 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section3 .card .card3 .wrap .yoz .yozuvla2 .yozuv2 h2 {
+  color: var(--grayscale-hardest, #606060);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card3 .wrap .yoz .yozuvla2 .yozuv2 p {
+  color: var(--grayscale-hardest, #606060);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card3 .wrap .yoz .yozuvla2 span {
+  color: var(--grayscale-light, #BFBFBF);
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card3 .wrap h3 {
+  margin-top: 8px;
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card3 .wrap .rating {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section3 .card .card3 .wrap .btn {
+  margin-top: 8px;
+}
+.section3 .card .card3 .wrap .btn button {
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+  color: #70C05B;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.section3 .card .card3 .wrap .btn button:hover {
+  background-color: #FF6633;
+  color: #fff;
+}
+.section3 .card .card4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: var(--main-surface, #FFF);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.section3 .card .card4 .wrap {
+  padding: 8px;
+  width: 100%;
+}
+.section3 .card .card4 .wrap .yoz {
+  display: flex;
+  justify-content: space-between;
+}
+.section3 .card .card4 .wrap .yoz .yozuvla .yozuv {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section3 .card .card4 .wrap .yoz .yozuvla .yozuv h2 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section3 .card .card4 .wrap .yoz .yozuvla .yozuv p {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section3 .card .card4 .wrap .yoz .yozuvla span {
+  color: var(--grayscale-light, #BFBFBF);
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card4 .wrap .yoz .yozuvla2 .yozuv2 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section3 .card .card4 .wrap .yoz .yozuvla2 .yozuv2 h2 {
+  color: var(--grayscale-hardest, #606060);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card4 .wrap .yoz .yozuvla2 .yozuv2 p {
+  color: var(--grayscale-hardest, #606060);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card4 .wrap .yoz .yozuvla2 span {
+  color: var(--grayscale-light, #BFBFBF);
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card4 .wrap h3 {
+  margin-top: 8px;
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section3 .card .card4 .wrap .rating {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section3 .card .card4 .wrap .btn {
+  margin-top: 8px;
+}
+.section3 .card .card4 .wrap .btn button {
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+  color: #70C05B;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.section3 .card .card4 .wrap .btn button:hover {
+  background-color: #FF6633;
+  color: #fff;
+}
+
+.section4 .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.section4 .wrap .pro {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section4 .wrap h3 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section4 .wrap p {
+  color: var(--grayscale-hardest, #606060);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.section5 .card {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 40px;
+}
+.section5 .card .card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: var(--main-surface, #FFF);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.section5 .card .card1 .wrap {
+  padding: 8px;
+}
+.section5 .card .card1 .wrap .yoz {
+  display: flex;
+  gap: 120px;
+}
+.section5 .card .card1 .wrap .yoz .yozuvla .yozuv {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section5 .card .card1 .wrap .yoz .yozuvla .yozuv h2 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section5 .card .card1 .wrap .yoz .yozuvla .yozuv p {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section5 .card .card1 .wrap h3 {
+  margin-top: 8px;
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section5 .card .card1 .wrap .rating {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section5 .card .card1 .wrap .btn {
+  margin-top: 8px;
+}
+.section5 .card .card1 .wrap .btn button {
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+  color: #70C05B;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.section5 .card .card1 .wrap .btn button:hover {
+  background-color: #FF6633;
+  color: #fff;
+}
+.section5 .card .card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: var(--main-surface, #FFF);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.section5 .card .card2 .wrap {
+  padding: 8px;
+}
+.section5 .card .card2 .wrap .yoz {
+  display: flex;
+  gap: 120px;
+}
+.section5 .card .card2 .wrap .yoz .yozuvla .yozuv {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section5 .card .card2 .wrap .yoz .yozuvla .yozuv h2 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section5 .card .card2 .wrap .yoz .yozuvla .yozuv p {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section5 .card .card2 .wrap h3 {
+  margin-top: 8px;
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section5 .card .card2 .wrap .rating {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section5 .card .card2 .wrap .btn {
+  margin-top: 8px;
+}
+.section5 .card .card2 .wrap .btn button {
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+  color: #70C05B;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.section5 .card .card2 .wrap .btn button:hover {
+  background-color: #FF6633;
+  color: #fff;
+}
+.section5 .card .card3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: var(--main-surface, #FFF);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.section5 .card .card3 .wrap {
+  padding: 8px;
+}
+.section5 .card .card3 .wrap .yoz {
+  display: flex;
+  gap: 120px;
+}
+.section5 .card .card3 .wrap .yoz .yozuvla .yozuv {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section5 .card .card3 .wrap .yoz .yozuvla .yozuv h2 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section5 .card .card3 .wrap .yoz .yozuvla .yozuv p {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section5 .card .card3 .wrap h3 {
+  margin-top: 8px;
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section5 .card .card3 .wrap .rating {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section5 .card .card3 .wrap .btn {
+  margin-top: 8px;
+}
+.section5 .card .card3 .wrap .btn button {
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+  color: #70C05B;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.section5 .card .card3 .wrap .btn button:hover {
+  background-color: #FF6633;
+  color: #fff;
+}
+.section5 .card .card4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: var(--main-surface, #FFF);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.section5 .card .card4 .wrap {
+  padding: 8px;
+}
+.section5 .card .card4 .wrap .yoz {
+  display: flex;
+  gap: 120px;
+}
+.section5 .card .card4 .wrap .yoz .yozuvla .yozuv {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section5 .card .card4 .wrap .yoz .yozuvla .yozuv h2 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section5 .card .card4 .wrap .yoz .yozuvla .yozuv p {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section5 .card .card4 .wrap h3 {
+  margin-top: 8px;
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section5 .card .card4 .wrap .rating {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section5 .card .card4 .wrap .btn {
+  margin-top: 8px;
+}
+.section5 .card .card4 .wrap .btn button {
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+  color: #70C05B;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.section5 .card .card4 .wrap .btn button:hover {
+  background-color: #FF6633;
+  color: #fff;
+}
+
+.section6 .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.section6 .wrap .pro {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section6 .wrap h3 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section6 .wrap p {
+  color: var(--grayscale-hardest, #606060);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.section7 .card {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-area: auto;
+  grid-gap: 40px;
+}
+.section7 .card .card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: var(--main-surface, #FFF);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.section7 .card .card1 .wrap {
+  padding: 8px;
+}
+.section7 .card .card1 .wrap .yoz {
+  display: flex;
+  gap: 120px;
+}
+.section7 .card .card1 .wrap .yoz .yozuvla .yozuv {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section7 .card .card1 .wrap .yoz .yozuvla .yozuv h2 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section7 .card .card1 .wrap .yoz .yozuvla .yozuv p {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section7 .card .card1 .wrap h3 {
+  margin-top: 8px;
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section7 .card .card1 .wrap .rating {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section7 .card .card1 .wrap .btn {
+  margin-top: 8px;
+}
+.section7 .card .card1 .wrap .btn button {
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+  color: #70C05B;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.section7 .card .card1 .wrap .btn button:hover {
+  background-color: #FF6633;
+  color: #fff;
+}
+.section7 .card .card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: var(--main-surface, #FFF);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.section7 .card .card2 .wrap {
+  padding: 8px;
+}
+.section7 .card .card2 .wrap .yoz {
+  display: flex;
+  gap: 120px;
+}
+.section7 .card .card2 .wrap .yoz .yozuvla .yozuv {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section7 .card .card2 .wrap .yoz .yozuvla .yozuv h2 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section7 .card .card2 .wrap .yoz .yozuvla .yozuv p {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section7 .card .card2 .wrap h3 {
+  margin-top: 8px;
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section7 .card .card2 .wrap .rating {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section7 .card .card2 .wrap .btn {
+  margin-top: 8px;
+}
+.section7 .card .card2 .wrap .btn button {
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+  color: #70C05B;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.section7 .card .card2 .wrap .btn button:hover {
+  background-color: #FF6633;
+  color: #fff;
+}
+.section7 .card .card3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: var(--main-surface, #FFF);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.section7 .card .card3 .wrap {
+  padding: 8px;
+}
+.section7 .card .card3 .wrap .yoz {
+  display: flex;
+  gap: 120px;
+}
+.section7 .card .card3 .wrap .yoz .yozuvla .yozuv {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section7 .card .card3 .wrap .yoz .yozuvla .yozuv h2 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section7 .card .card3 .wrap .yoz .yozuvla .yozuv p {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section7 .card .card3 .wrap h3 {
+  margin-top: 8px;
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section7 .card .card3 .wrap .rating {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section7 .card .card3 .wrap .btn {
+  margin-top: 8px;
+}
+.section7 .card .card3 .wrap .btn button {
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+  color: #70C05B;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.section7 .card .card3 .wrap .btn button:hover {
+  background-color: #FF6633;
+  color: #fff;
+}
+.section7 .card .card4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 4px;
+  background: var(--main-surface, #FFF);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.section7 .card .card4 .wrap {
+  padding: 8px;
+}
+.section7 .card .card4 .wrap .yoz {
+  display: flex;
+  gap: 120px;
+}
+.section7 .card .card4 .wrap .yoz .yozuvla .yozuv {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section7 .card .card4 .wrap .yoz .yozuvla .yozuv h2 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section7 .card .card4 .wrap .yoz .yozuvla .yozuv p {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section7 .card .card4 .wrap h3 {
+  margin-top: 8px;
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section7 .card .card4 .wrap .rating {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.section7 .card .card4 .wrap .btn {
+  margin-top: 8px;
+}
+.section7 .card .card4 .wrap .btn button {
+  width: 100%;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+  color: #70C05B;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.section7 .card .card4 .wrap .btn button:hover {
+  background-color: #FF6633;
+  color: #fff;
+}
+
+.section8 {
+  margin-top: 120px;
+}
+.section8 h1 {
+  color: #414141;
+  font-family: Rubik;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section8 .wrapper {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  width: 100%;
+}
+.section8 .wrapper .karta {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  max-width: 584px;
+  border-radius: 4px;
+  background: var(--main-primary-muted, #FCD5BA);
+  box-shadow: 0px 8px 16px 0px rgba(202, 147, 96, 0.5);
+}
+.section8 .wrapper .karta .obsh h3 {
+  color: #414141;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section8 .wrapper .karta .obsh p {
+  width: 100%;
+  color: #414141;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section8 .wrapper .aksiya {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  max-width: 584px;
+  border-radius: 4px;
+  background: var(--main-secondary-muted, #E5FFDE);
+  box-shadow: 0px 8px 16px 0px rgba(202, 147, 96, 0.5);
+}
+.section8 .wrapper .aksiya .obsh2 h3 {
+  color: #414141;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section8 .wrapper .aksiya .obsh2 p {
+  color: #414141;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section8 .wrapper .aksiya img {
+  max-width: 300px;
+}
+
+.section9 {
+  margin-top: 120px;
+}
+.section9 h1 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section9 .wrap {
+  margin-top: 40px;
+}
+.section9 .wrap .btn {
+  display: flex;
+  gap: 24px;
+}
+.section9 .wrap .btn button {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  background-color: #F3F2F1;
+  color: #606060;
+  text-align: center;
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  transition: all 0.5s linear;
+}
+.section9 .wrap .btn button:hover {
+  background-color: #70C05B;
+  color: #fff;
+}
+.section9 .wrap .map {
+  margin-top: 24px;
+}
+.section9 .wrap .map iframe {
+  width: 100%;
+  height: 354px;
+}
+
+.Section10 .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.Section10 .wrap .pro {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.Section10 .wrap h3 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.Section10 .wrap p {
+  color: var(--grayscale-hardest, #606060);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.section11 .item {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.section11 .item .item_1 {
+  border-radius: 4px;
+  background: var(--main-surface, #FFF);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  max-width: 376px;
+}
+.section11 .item .item_1 img {
+  max-width: 376px;
+}
+.section11 .item .item_1 .item1 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section11 .item .item_1 .item1 span {
+  color: var(--grayscale-hard, #8F8F8F);
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section11 .item .item_1 .item1 h4 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section11 .item .item_1 .item1 p {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section11 .item .item_1 .item1 button {
+  padding: 8px;
+  color: var(--main-secondary, #70C05B);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  border-radius: 4px;
+  border: none;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.section11 .item .item_1 .item1 button:hover {
+  background: #E5FFDE;
+}
+.section11 .item .item_2 {
+  border-radius: 4px;
+  background: var(--main-surface, #FFF);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  max-width: 376px;
+}
+.section11 .item .item_2 img {
+  max-width: 376px;
+}
+.section11 .item .item_2 .item2 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section11 .item .item_2 .item2 span {
+  color: var(--grayscale-hard, #8F8F8F);
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section11 .item .item_2 .item2 h4 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section11 .item .item_2 .item2 p {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section11 .item .item_2 .item2 button {
+  padding: 8px;
+  color: var(--main-secondary, #70C05B);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  border-radius: 4px;
+  border: none;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.section11 .item .item_2 .item2 button:hover {
+  background: #E5FFDE;
+}
+.section11 .item .item_3 {
+  border-radius: 4px;
+  background: var(--main-surface, #FFF);
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  max-width: 376px;
+}
+.section11 .item .item_3 img {
+  max-width: 376px;
+}
+.section11 .item .item_3 .item3 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section11 .item .item_3 .item3 span {
+  color: var(--grayscale-hard, #8F8F8F);
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section11 .item .item_3 .item3 h4 {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.section11 .item .item_3 .item3 p {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.section11 .item .item_3 .item3 button {
+  padding: 8px;
+  color: var(--main-secondary, #70C05B);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  border-radius: 4px;
+  border: none;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.section11 .item .item_3 .item3 button:hover {
+  background: #E5FFDE;
+}
+
+.footer {
+  margin-top: 80px;
+  background-image: url(/assets/Images/footer-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.footer .footer_wrap {
+  padding: 10px;
+}
+.footer .footer_wrap .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.footer .footer_wrap .social .info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.footer .footer_wrap .social .info .info1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+.footer .footer_wrap .social .info .info1 p {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.footer .footer_wrap .social .social1 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.footer .footer_wrap .social .social1 p {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.footer .footer_wrap .design {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 8px;
+}
+
+.footer2 {
+  display: none;
+}
+
+.footer_header {
+  display: none;
+}
+
+@media (max-width: 1230px) {
+  .header .wrapper {
+    gap: 10px;
+  }
+  .header .wrapper img:nth-child(6) {
+    display: none;
+  }
+  .header .wrapper .poisk input input[type=text] {
+    max-width: 300px;
+    box-sizing: border-box;
+    border: 2px solid #70C05B;
+    border-radius: 4px;
+    background-color: white;
+    background-image: url("/icons/search.svg");
+    background-position: 290px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 100px 12px 20px;
+    color: var(--grayscale-hard, #8F8F8F);
+    font-size: 16px;
+    font-family: Rubik;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .section1 .wrapper .back .food h1 {
+    font-size: 35px;
+  }
+  .section3 .card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .section5 .card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .section7 .card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1025px) {
+  .header .wrapper .avatar p {
+    display: none;
+  }
+}
+@media (max-width: 950px) {
+  .header .wrapper .logo a:nth-child(2) {
+    display: none;
+  }
+  .header .wrapper .btn a {
+    display: none;
+  }
+  .header .wrapper .btn button::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("/assets/icons/menu.svg");
+    background-size: cover;
+    margin-right: 1px;
+    vertical-align: middle;
+  }
+  .section1 .wrapper .back .food img {
+    width: 250px;
+  }
+  .section1 .wrapper .back .food h1 {
+    font-size: 26px;
+  }
+  .section3 .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section5 .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section7 .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section8 .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section8 .wrapper .karta img {
+    max-width: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    display: none;
+  }
+  .header2 {
+    display: block;
+  }
+  .header2 .wrapper {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .header2 .wrapper .btn button {
+    width: 40px;
+    padding: 8px;
+    border-radius: 4px;
+    background: var(--main-secondary, #70C05B);
+    border: none;
+  }
+  .header2 .wrapper .btn button::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("/assets/icons/menu.svg");
+    background-size: cover;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  .header2 .wrapper .poisk input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #70C05B;
+    border-radius: 4px;
+    background-color: white;
+    background-image: url("/assets/icons/search.svg");
+    background-position: 170px 10px;
+    background-repeat: no-repeat;
+    padding: 8px;
+    color: var(--grayscale-hard, #8F8F8F);
+    font-size: 16px;
+    font-family: Rubik;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .header2 .wrapper .icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .header2 {
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+  }
+  .section1 {
+    margin-top: 80px;
+  }
+  .section1 .wrapper .back .food img {
+    width: 250px;
+  }
+  .section1 .wrapper .back .food h1 {
+    font-size: 20px;
+  }
+  .section3 .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section5 .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section7 .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section8 .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section8 .wrapper .karta img {
+    max-width: 200px;
+  }
+}
+@media (max-width: 360px) {
+  .header .wrapper .poisk input {
+    width: 200px;
+  }
+  .header2 {
+    display: none;
+  }
+  .header3 {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    background-color: #fff;
+  }
+  .header3 .wrap {
+    display: flex;
+    gap: 20px;
+    padding: 16px;
+  }
+  .header3 .wrap .poisk input[type=text] {
+    width: 250px;
+    box-sizing: border-box;
+    border: 2px solid #70C05B;
+    border-radius: 4px;
+    background-color: white;
+    background-image: url("/assets/icons/search.svg");
+    background-position: 220px 10px;
+    background-repeat: no-repeat;
+    padding: 8px;
+    color: var(--grayscale-hard, #8F8F8F);
+    font-size: 16px;
+    font-family: Rubik;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .section1 {
+    margin-top: 80px;
+  }
+  .section1 .wrapper .back .food img {
+    display: none;
+  }
+  .section1 .wrapper .back .food h1 {
+    padding: 27px;
+    font-size: 17px;
+  }
+  .section3 .card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section3 .card .card1 {
+    width: 100%;
+  }
+  .section5 .card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section6 .wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .section7 .card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section8 .wrapper .karta .obsh h3 {
+    font-size: 15px;
+  }
+  .footer {
+    display: none;
+  }
+  .footer2 {
+    display: block;
+    margin-top: 40px;
+    background-image: url(/assets/Images/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 360px;
+  }
+  .footer2 .social {
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer2 .social .social1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+  }
+  .footer2 .social .social1 p {
+    color: var(--main-on-surface, #414141);
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .footer2 .social .info1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .footer2 .social .info1 p {
+    color: var(--main-on-surface, #414141);
+    font-family: Rubik;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .footer_header {
+    display: block;
+  }
+  .footer_header .footer_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footer_header .footer_head .kata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .footer_header .footer_head .izb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .footer_header .footer_head .zakaz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .footer_header .footer_head .sava {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .footer_header .footer_head p {
+    color: var(--main-on-surface, #414141);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .footer_header {
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
