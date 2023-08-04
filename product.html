@@ -1,11 +1,592 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sass/product.css">
   <title>Товар</title>
 </head>
+
 <body>
-  
+  <!-- HEADER -->
+
+  <header class="header">
+    <div class="container">
+      <nav>
+        <div class="wrapper">
+          <div class="logo">
+            <a href="index.html"><img src="/assets/icons/main-logo.svg" alt=""></a>
+            <a href="index.html"><img src="/assets/icons/Северяночка.svg" alt=""></a>
+          </div>
+          <div class="btn">
+            <button><a href="categorie.html">Каталог</button></a>
+          </div>
+          <div class="poisk">
+            <input type="text" name="search" placeholder="Найти товар">
+          </div>
+          <div class="icons">
+            <div class="heart">
+              <a href="favorites.html"><img src="/assets/icons/heart.svg" alt=""></a>
+              <p>Избранное</p>
+            </div>
+            <div class="prod">
+              <a href="product.html"><img src="/assets/icons/box.svg" alt=""></a>
+              <p>Продукты</p>
+            </div>
+            <div class="korz">
+              <a href="basket.html"><img src="/assets/icons/korz.svg" alt=""></a>
+              <p>Корзина</p>
+            </div>
+          </div>
+          <div class="avatar">
+            <img src="/assets/icons/avatar.svg" alt="">
+            <p>Алексей</p>
+          </div>
+          <img src="/assets/icons/strelka.svg" alt="">
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="header2">
+    <div class="container">
+      <div class="wrapper">
+        <div class="logo">
+          <img src="/assets/icons/logo-smile.svg" alt="">
+        </div>
+        <div class="btn">
+          <button></button>
+        </div>
+        <div class="poisk">
+          <input type="text" name="search" placeholder="Найти товар">
+        </div>
+        <div class="icons">
+          <a href="favorites.html"><img src="/assets/icons/heart.svg" alt=""></a>
+          <a href="product.html"><img src="/assets/icons/box.svg" alt=""></a>
+          <a href="basket.html"><img src="/assets/icons/korz.svg" alt=""></a>
+          <img src="/assets/icons/avatar.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header3">
+    <div class="container">
+      <div class="wrap">
+        <div class="logo">
+          <img src="/assets/icons/logo-smile.svg" alt="">
+        </div>
+        <div class="poisk">
+          <input type="text" name="search" placeholder="Найти товар">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEAD -->
+  <section class="section1">
+    <div class="container">
+      <div class="info">
+        <a href="index.html">
+          <p>Главная</p>
+        </a>
+        <img src="/assets/icons/strelka-right.svg" alt="">
+        <a href="product-2.html">
+          <p>Каталог</p>
+        </a>
+        <img src="/assets/icons/strelka-right.svg" alt="">
+        <a href="#">
+          <p>Молоко, сыр, яйцо</p>
+        </a>
+        <img src="/assets/icons/strelka-right.svg" alt="">
+        <a href="#"><span>Масло ПРОСТОКВАШИНО сливочное в/с 82% фольга без змж, Россия, 180 г</span></a>
+      </div>
+      <div class="zagalovok">
+        <h1>Масло ПРОСТОКВАШИНО сливочное в/с 82% фольга без змж, Россия, 180 г</h1>
+      </div>
+      <div class="otziv">
+        <p>арт. 371431</p>
+        <div class="rating">
+          <img src="assets/icons/star.svg" alt="">
+          <img src="assets/icons/star.svg" alt="">
+          <img src="assets/icons/star-empty.svg" alt="">
+          <img src="assets/icons/star-empty.svg" alt="">
+          <img src="assets/icons/star-empty.svg" alt="">
+          <p>3 отзыва</p>
+        </div>
+        <div class="send">
+          <img src="/assets/icons/share.svg" alt="">
+          <p>Поделиться</p>
+        </div>
+        <div class="like">
+          <img src="/assets/icons/heart.svg" alt="">
+          <p>В избраное</p>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="left">
+          <div class="slider">
+            <img src="/assets/Images/cat-milk.png" alt="">
+            <img src="/assets/Images/cat-milk.png" alt="">
+            <img src="/assets/Images/cat-milk.png" alt="">
+            <img src="/assets/Images/cat-milk.png" alt="">
+            <img src="/assets/Images/cat-milk.png" alt="">
+          </div>
+          <img src="/assets/Images/cat-milk-big.png" alt="">
+        </div>
+        <div class="right">
+          <div class="price">
+            <div class="price-1">
+              <p>192,69 ₽</p>
+              <span>Обычная цена</span>
+            </div>
+            <div class="price-2">
+              <p>108,99 ₽</p>
+              <div class="info">
+                <span>С картой Северяночки</span>
+                <img src="/assets/icons/info.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="btn">
+            <button><img src="/assets/icons/shopping-cart.svg" alt="">В корзину</button>
+          </div>
+          <div class="brend">
+            <p>Бренд</p>
+            <span>ПРОСТОКВАШИНО</span>
+          </div>
+          <div class="made">
+            <p>Страна производителя</p>
+            <span>Россия</span>
+          </div>
+          <div class="massa">
+            <p>Упаковка</p>
+            <span>180 г</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section2 -->
+
+  <section class="section2">
+    <div class="container">
+      <div class="products">
+        <h1>С этим товаров мокупают</h1>
+        <div class="card">
+          <div class="card1">
+            <img src="/assets/Images/doktorskiy.jpg" alt="">
+            <div class="wrap">
+              <div class="yoz">
+                <div class="yozuvla">
+                  <div class="yozuv">
+                    <h2>44,50</h2>
+                    <p>₽</p>
+                  </div>
+                  <span>С картой</span>
+                </div>
+                <div class="yozuvla2">
+                  <div class="yozuv2">
+                    <h2>50,50</h2>
+                    <p>₽</p>
+                  </div>
+                  <span>Обычная</span>
+                </div>
+              </div>
+              <a href="product.html">
+                <h3>Г/Ц Блинчики с мясом вес, Россия</h3>
+              </a>
+              <div class="rating">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star-empty.svg" alt="">
+                <img src="/assets/icons/star-empty.svg" alt="">
+                <img src="/assets/icons/star-empty.svg" alt="">
+              </div>
+              <div class="btn">
+                <button>В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="card2">
+            <img src="/assets/Images/kolbasa2.jpg" alt="">
+            <div class="wrap">
+              <div class="yoz">
+                <div class="yozuvla">
+                  <div class="yozuv">
+                    <h2>44,50</h2>
+                    <p>₽</p>
+                  </div>
+                  <span>С картой</span>
+                </div>
+                <div class="yozuvla2">
+                  <div class="yozuv2">
+                    <h2>50,50</h2>
+                    <p>₽</p>
+                  </div>
+                  <span>Обычная</span>
+                </div>
+              </div>
+              <a href="product.html">
+                <h3>Г/Ц Блинчики с мясом вес, Россия</h3>
+              </a>
+              <div class="rating">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star-empty.svg" alt="">
+                <img src="/assets/icons/star-empty.svg" alt="">
+              </div>
+              <div class="btn">
+                <button>В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="card3">
+            <img src="/assets/Images/sosiska2.jpg" alt="">
+            <div class="wrap">
+              <div class="yoz">
+                <div class="yozuvla">
+                  <div class="yozuv">
+                    <h2>44,50</h2>
+                    <p>₽</p>
+                  </div>
+                  <span>С картой</span>
+                </div>
+                <div class="yozuvla2">
+                  <div class="yozuv2">
+                    <h2>50,50</h2>
+                    <p>₽</p>
+                  </div>
+                  <span>Обычная</span>
+                </div>
+              </div>
+              <a href="product.html">
+                <h3>Г/Ц Блинчики с мясом вес, Россия</h3>
+              </a>
+              <div class="rating">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+              </div>
+              <div class="btn">
+                <button>В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="card4">
+            <img src="/assets/Images/milk2.jpg" alt="">
+            <div class="wrap">
+              <div class="yoz">
+                <div class="yozuvla">
+                  <div class="yozuv">
+                    <h2>44,50</h2>
+                    <p>₽</p>
+                  </div>
+                  <span>С картой</span>
+                </div>
+                <div class="yozuvla2">
+                  <div class="yozuv2">
+                    <h2>50,50</h2>
+                    <p>₽</p>
+                  </div>
+                  <span>Обычная</span>
+                </div>
+              </div>
+              <a href="product.html">
+                <h3>Г/Ц Блинчики с мясом вес, Россия</h3>
+              </a>
+              <div class="rating">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star50-50.svg" alt="">
+              </div>
+              <div class="btn">
+                <button>В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section3 -->
+
+  <section class="section3">
+    <div class="container">
+      <div class="wrap">
+        <h3>Акции</h3>
+        <div class="pro">
+          <a href="all-product.html">
+            <p>Все продукты</p>
+          </a>
+          <img src="/assets/icons/strelka-right.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section4 -->
+
+  <section class="section4">
+    <div class="container">
+      <div class="products">
+        <div class="card">
+          <div class="card1">
+            <img src="/assets/Images/blinchik.jpg" alt="">
+            <div class="wrap">
+              <div class="yoz">
+                <div class="yozuvla">
+                  <div class="yozuv">
+                    <h2>44,50</h2>
+                    <p>₽</p>
+                  </div>
+                  <span>С картой</span>
+                </div>
+                <div class="yozuvla2">
+                  <div class="yozuv2">
+                    <h2>50,50</h2>
+                    <p>₽</p>
+                  </div>
+                  <span>Обычная</span>
+                </div>
+              </div>
+              <a href="product.html">
+                <h3>Г/Ц Блинчики с мясом вес, Россия</h3>
+              </a>
+              <div class="rating">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star-empty.svg" alt="">
+                <img src="/assets/icons/star-empty.svg" alt="">
+                <img src="/assets/icons/star-empty.svg" alt="">
+              </div>
+              <div class="btn">
+                <button>В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="card2">
+            <img src="/assets/Images/milk.jpg" alt="">
+            <div class="wrap">
+              <div class="yoz">
+                <div class="yozuvla">
+                  <div class="yozuv">
+                    <h2>44,50</h2>
+                    <p>₽</p>
+                  </div>
+                  <span>С картой</span>
+                </div>
+                <div class="yozuvla2">
+                  <div class="yozuv2">
+                    <h2>50,50</h2>
+                    <p>₽</p>
+                  </div>
+                  <span>Обычная</span>
+                </div>
+              </div>
+              <a href="product.html">
+                <h3>Г/Ц Блинчики с мясом вес, Россия</h3>
+              </a>
+              <div class="rating">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star-empty.svg" alt="">
+                <img src="/assets/icons/star-empty.svg" alt="">
+              </div>
+              <div class="btn">
+                <button>В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="card3">
+            <img src="/assets/Images/kolbasa.jpg" alt="">
+            <div class="wrap">
+              <div class="yoz">
+                <div class="yozuvla">
+                  <div class="yozuv">
+                    <h2>44,50</h2>
+                    <p>₽</p>
+                  </div>
+                  <span>С картой</span>
+                </div>
+                <div class="yozuvla2">
+                  <div class="yozuv2">
+                    <h2>50,50</h2>
+                    <p>₽</p>
+                  </div>
+                  <span>Обычная</span>
+                </div>
+              </div>
+              <a href="product.html">
+                <h3>Г/Ц Блинчики с мясом вес, Россия</h3>
+              </a>
+              <div class="rating">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+              </div>
+              <div class="btn">
+                <button>В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="card4">
+            <img src="/assets/Images/sosiska.jpg" alt="">
+            <div class="wrap">
+              <div class="yoz">
+                <div class="yozuvla">
+                  <div class="yozuv">
+                    <h2>44,50</h2>
+                    <p>₽</p>
+                  </div>
+                  <span>С картой</span>
+                </div>
+                <div class="yozuvla2">
+                  <div class="yozuv2">
+                    <h2>50,50</h2>
+                    <p>₽</p>
+                  </div>
+                  <span>Обычная</span>
+                </div>
+              </div>
+              <a href="product.html">
+                <h3>Г/Ц Блинчики с мясом вес, Россия</h3>
+              </a>
+              <div class="rating">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star.svg" alt="">
+                <img src="/assets/icons/star50-50.svg" alt="">
+              </div>
+              <div class="btn">
+                <button>В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer_wrap">
+        <div class="social">
+          <div class="info">
+            <img src="/assets/Images/footer.logo.png" alt="">
+            <div class="info1">
+              <a href="about-us.html">
+                <p>О компании</p>
+              </a>
+              <a href="contact.html">
+                <p>Контакты</p>
+              </a>
+              <a href="vacancies.html">
+                <p>Вакансии</p>
+              </a>
+              <a href="">
+                <p>Статьи</p>
+              </a>
+              <a href="">
+                <p>Политика обработки персональных данных</p>
+              </a>
+            </div>
+          </div>
+          <div class="social1">
+            <a href="https://www.instagram.com"><img src="/social-media/instagram.svg" alt=""></a>
+            <a href="https://www.vkontakte.com"><img src="/social-media/vkontakte.svg" alt=""></a>
+            <a href="https://www.facebook.com"><img src="/social-media/facebook.svg" alt=""></a>
+            <a href="https://www.ok.ru"><img src="/social-media/ok.svg" alt=""></a>
+            <img src="/assets/icons/phone.svg" alt="">
+            <p>+998 (90) 134-74-32</p>
+          </div>
+        </div>
+        <div class="design">
+          <p>Дизайн</p>
+          <img src="/assets/icons/design-logo.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="footer2">
+    <div class="container">
+      <div class="social">
+        <img src="/assets/Images/footer.logo.png" alt="">
+        <div class="social1">
+          <a href="https://www.instagram.com"><img src="/social-media/instagram.svg" alt=""></a>
+          <a href="https://www.vkontakte.com"><img src="/social-media/vkontakte.svg" alt=""></a>
+          <a href="https://www.facebook.com"><img src="/social-media/facebook.svg" alt=""></a>
+          <a href="https://www.ok.ru"><img src="/social-media/ok.svg" alt=""></a>
+          <p>+998 (90) 134-74-32</p>
+        </div>
+        <div class="info1">
+          <a href="">
+            <p>О компании</p>
+          </a>
+          <a href="">
+            <p>Контакты</p>
+          </a>
+          <a href="">
+            <p>Вакансии</p>
+          </a>
+          <a href="">
+            <p>Статьи</p>
+          </a>
+          <a href="">
+            <p>Политика обработки персональных данных</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <footer class="footer_header">
+    <div class="container">
+      <div class="footer_head">
+        <div class="kata">
+          <img src="/assets/icons/footer_menu.svg" alt="">
+          <a href="">
+            <p>Каталог</p>
+          </a>
+        </div>
+        <div class="izb">
+          <img src="/assets/icons/heart.svg" alt="">
+          <a href="favorites.html">
+            <p>Избранное</p>
+          </a>
+        </div>
+        <div class="zakaz">
+          <img src="/assets/icons/box.svg" alt="">
+          <a href="">
+            <p>Заказы</p>
+          </a>
+        </div>
+        <div class="sava">
+          <img src="/assets/icons/korz.svg" alt="">
+          <a href="basket.html">
+            <p>Корзина</p>
+          </a>
+        </div>
+        <img src="/assets/icons/avatar.svg" alt="">
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
