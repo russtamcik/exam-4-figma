@@ -1,11 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sass/categories.css">
   <title>Категория</title>
 </head>
+
 <body>
-  
+
+
+  <header class="header">
+    <div class="container">
+      <nav>
+        <div class="wrapper">
+          <div class="logo">
+            <a href="index.html"><img src="/assets/icons/main-logo.svg" alt=""></a>
+            <a href="index.html"><img src="/assets/icons/Северяночка.svg" alt=""></a>
+          </div>
+          <div class="btn">
+            <button class="dropbtn"><a href="categorie.html">Каталог</a></button>
+          </div>
+          <div class="poisk">
+            <input type="text" name="search" placeholder="Найти товар">
+          </div>
+          <div class="icons">
+            <div class="heart">
+              <a href="favorites.html"><img src="/assets/icons/heart.svg" alt=""></a>
+              <p>Избранное</p>
+            </div>
+            <div class="prod">
+              <a href="product.html"><img src="/assets/icons/box.svg" alt=""></a>
+              <p>Продукты</p>
+            </div>
+            <div class="korz">
+              <a href="basket.html"><img src="/assets/icons/korz.svg" alt=""></a>
+              <p>Корзина</p>
+            </div>
+          </div>
+          <div class="avatar">
+            <img src="/assets/icons/avatar.svg" alt="">
+            <p>Алексей</p>
+          </div>
+          <img src="/assets/icons/strelka.svg" alt="">
+        </div>
+        <div class="categori-menu">
+          <div class="item">
+            <div class="item1">
+              <a href="categories.html">
+                <p>Молоко, сыр, яйцо</p>
+              </a>
+              <a href="categories.html">
+                <p>Хлеб</p>
+              </a>
+              <a href="categories.html">
+                <p>Фрукты и овощи</p>
+              </a>
+              <a href="categories.html">
+                <p>Замороженные продукты</p>
+              </a>
+            </div>
+            <div class="item2">
+              <a href="categories.html">
+                <p>Напитки</p>
+              </a>
+              <a href="categories.html">
+                <p>Кондитерские изделия</p>
+              </a>
+              <a href="categories.html">
+                <p>Чай, кофе</p>
+              </a>
+            </div>
+            <div class="item3">
+              <a href="categories.html">
+                <p>Бакалея</p>
+              </a>
+              <a href="categories.html">
+                <p>Здоровое питание</p>
+              </a>
+              <a href="categories.html">
+                <p>Зоотовары</p>
+              </a>
+            </div>
+            <div class="item4">
+              <a href="categories.html">
+                <p>Непродовольственные товары</p>
+              </a>
+              <a href="categories.html">
+                <p>Детское питание </p>
+              </a>
+              <a href="categories.html">
+                <p>Мясо, птица, колбаса</p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page">
+    <div class="container">
+      <div class="page_1">
+        <a href="index.html">
+          <p>Главная</p>
+        </a>
+        <img src="/assets/icons/strelka-right.svg" alt="">
+        <a href="index.html">
+          <p>Каталог</p>
+        </a>
+        <img src="/assets/icons/strelka-right.svg" alt="">
+        <a href="about-us.html"><span>Молоко, сыр, яйцо</span></a>
+      </div>
+      <div class="h1">
+        <h1>Молоко, сыр, яйцо</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="section1">
+    <div class="container">
+      <div class="wrap">
+        <div class="left">
+          <div class="filtr">
+            <p>Фильтр</p>
+          </div>
+          <div class="price">
+            <p>Цена</p>
+            <div class="clean">
+              <p>Очистить</p>
+            </div>
+          </div>
+          <div class="inputs">
+            <p class="one">1</p>
+            <img src="assets/icons/minus.svg" alt="">
+            <p class="yuz">100</p>
+          </div>
+          <div class="range-input">
+            <input type="range" class="range">
+          </div>
+        </div>
+        <div class="right">
+          <div class="container">
+            <div class="card">
+              <div class="discount-products-row products-row"></div>
+              <div class="new-products-row products-row"></div>
+              <div class="popular-products-row products-row"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/categories-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
 </body>
+
 </html>
