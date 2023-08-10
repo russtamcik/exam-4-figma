@@ -185,7 +185,7 @@ a {
 
 }
 
-.header{
+.header {
   position: fixed;
   width: 100%;
 }
@@ -362,7 +362,7 @@ a {
         color: #fff;
       }
 
-      .active-cart{
+      .active-cart {
         background-color: #FF6633;
         color: #fff;
       }
@@ -527,6 +527,11 @@ a {
         background-color: #FF6633;
         color: #fff;
       }
+
+      .active-cart {
+        background-color: #FF6633;
+        color: #fff;
+      }
     }
   }
 }
@@ -678,6 +683,11 @@ a {
       }
 
       button:hover {
+        background-color: #FF6633;
+        color: #fff;
+      }
+
+      .active-cart {
         background-color: #FF6633;
         color: #fff;
       }

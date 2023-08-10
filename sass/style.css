@@ -449,6 +449,10 @@ a {
   background-color: #FF6633;
   color: #fff;
 }
+.new-products-row .product-card .product-card-footer .active-cart {
+  background-color: #FF6633;
+  color: #fff;
+}
 
 .section6 .wrap {
   display: flex;
@@ -579,6 +583,10 @@ a {
   cursor: pointer;
 }
 .popular-products-row .product-card .product-card-footer button:hover {
+  background-color: #FF6633;
+  color: #fff;
+}
+.popular-products-row .product-card .product-card-footer .active-cart {
   background-color: #FF6633;
   color: #fff;
 }
