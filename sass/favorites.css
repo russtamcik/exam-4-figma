@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fbf8ec;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+.header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 30px;
+}
+.header .wrapper .logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header .wrapper .btn button {
+  padding: 13px;
+  color: var(--main-on-secondary, #FFF);
+  text-align: center;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  background-color: #70C05B;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.header .wrapper .btn button::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("/icons/menu.svg");
+  background-size: cover;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.header .wrapper .poisk input[type=text] {
+  max-width: 347px;
+  box-sizing: border-box;
+  border: 2px solid #70C05B;
+  border-radius: 4px;
+  background-color: white;
+  background-image: url("/icons/search.svg");
+  background-position: 290px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 100px 12px 20px;
+  color: var(--grayscale-hard, #8F8F8F);
+  font-size: 16px;
+  font-family: Rubik;
+  font-weight: 400;
+  line-height: 150%;
+}
+.header .wrapper .icons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.header .wrapper .icons p {
+  color: var(--main-on-surface, #414141);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.header .wrapper .icons .heart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.header .wrapper .icons .prod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.header .wrapper .icons .korz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.header .wrapper .icons .korz .cart {
+  position: absolute;
+  top: 4px;
+  right: 393px;
+  border-radius: 4px;
+  background: var(--main-primary, #F63);
+  padding: 1px 2px;
+  color: var(--main-on-primary, #FFF);
+}
+.header .wrapper .avatar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header .wrapper .avatar p {
+  color: var(--on-surface, #232323);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.header .categori-menu {
+  display: none;
+  position: absolute;
+  width: 1429px;
+  padding: 40px 116px;
+  background-color: #fff;
+}
+.header .categori-menu a {
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.header .categori-menu a:hover {
+  color: #FF6633;
+}/*# sourceMappingURL=favorites.css.map */

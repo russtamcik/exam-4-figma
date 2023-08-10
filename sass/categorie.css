@@ -59,7 +59,7 @@ a {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-image: url("/assets/icons/menu.svg");
+  background-image: url("/icons/menu.svg");
   background-size: cover;
   margin-right: 10px;
   vertical-align: middle;
@@ -70,7 +70,7 @@ a {
   border: 2px solid #70C05B;
   border-radius: 4px;
   background-color: white;
-  background-image: url("/assets/icons/search.svg");
+  background-image: url("/icons/search.svg");
   background-position: 340px 10px;
   background-repeat: no-repeat;
   padding: 8px 175px 8px 20px;
@@ -112,6 +112,15 @@ a {
   align-items: center;
   gap: 6px;
 }
+.header .wrapper .icons .korz .cart {
+  position: absolute;
+  top: 4px;
+  right: 380px;
+  border-radius: 4px;
+  background: var(--main-primary, #F63);
+  padding: 1px 2px;
+  color: var(--main-on-primary, #FFF);
+}
 .header .wrapper .avatar {
   display: flex;
   align-items: center;
@@ -128,35 +137,11 @@ a {
 .header .categori-menu {
   display: none;
   position: absolute;
-  width: 1440px;
+  width: 1429px;
   padding: 40px 116px;
   background-color: #fff;
 }
-.header .categori-menu .item {
-  display: flex;
-  gap: 40px;
-}
-.header .categori-menu .item .item1 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.header .categori-menu .item .item2 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.header .categori-menu .item .item3 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.header .categori-menu .item .item4 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.header .categori-menu p {
+.header .categori-menu a {
   color: var(--main-on-surface, #414141);
   font-family: Rubik;
   font-size: 16px;
@@ -166,7 +151,7 @@ a {
   cursor: pointer;
   transition: all 0.3s linear;
 }
-.header .categori-menu p:hover {
+.header .categori-menu a:hover {
   color: #FF6633;
 }
 
@@ -229,7 +214,7 @@ a {
   gap: 40px;
 }
 .section1 .wrapper .wrap_1 .eggs {
-  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/assets/Images/breakfast.png");
+  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/Images/png/breakfast.png");
   background-repeat: no-repeat;
   width: 584px;
   padding: 163px 10px 10px 10px;
@@ -245,7 +230,7 @@ a {
   line-height: 150%;
 }
 .section1 .wrapper .wrap_1 .bread {
-  background: linear-gradient(180deg, rgba(255, 102, 51, 0) 0%, #F63 100%), url("/assets/Images/bread.png");
+  background: linear-gradient(180deg, rgba(255, 102, 51, 0) 0%, #F63 100%), url("/Images/png/bread.png");
   background-repeat: no-repeat;
   width: 272px;
   padding: 163px 10px 10px 10px;
@@ -261,7 +246,7 @@ a {
   line-height: 150%;
 }
 .section1 .wrapper .wrap_1 .vega {
-  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/assets/Images/vegetables.png");
+  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/Images/png/vegetables.png");
   background-repeat: no-repeat;
   width: 272px;
   padding: 163px 10px 10px 10px;
@@ -282,7 +267,7 @@ a {
   gap: 40px;
 }
 .section1 .wrapper .wrap_2 .ice {
-  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/assets/Images/ice-vege.png");
+  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/Images/png/ice-vege.png");
   background-repeat: no-repeat;
   width: 272px;
   padding: 163px 10px 10px 10px;
@@ -298,7 +283,7 @@ a {
   line-height: 150%;
 }
 .section1 .wrapper .wrap_2 .drink {
-  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/assets/Images/drinks.png");
+  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/Images/png/drinks.png");
   background-repeat: no-repeat;
   width: 272px;
   padding: 163px 10px 10px 10px;
@@ -314,7 +299,7 @@ a {
   line-height: 150%;
 }
 .section1 .wrapper .wrap_2 .sweets {
-  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/assets/Images/sweets.png");
+  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/Images/png/sweets.png");
   background-repeat: no-repeat;
   width: 272px;
   padding: 163px 10px 10px 10px;
@@ -330,7 +315,7 @@ a {
   line-height: 150%;
 }
 .section1 .wrapper .wrap_2 .coffee {
-  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/assets/Images/coffee.png");
+  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/Images/png/coffee.png");
   background-repeat: no-repeat;
   width: 272px;
   padding: 163px 10px 10px 10px;
@@ -351,7 +336,7 @@ a {
   gap: 40px;
 }
 .section1 .wrapper .wrap_3 .makaron {
-  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/assets/Images/makaron.png");
+  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/Images/png/makaron.png");
   background-repeat: no-repeat;
   width: 272px;
   padding: 163px 10px 10px 10px;
@@ -367,7 +352,7 @@ a {
   line-height: 150%;
 }
 .section1 .wrapper .wrap_3 .mix {
-  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/assets/Images/mix.png");
+  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/Images/png/mix.png");
   background-repeat: no-repeat;
   width: 272px;
   padding: 163px 10px 10px 10px;
@@ -383,7 +368,7 @@ a {
   line-height: 150%;
 }
 .section1 .wrapper .wrap_3 .animals {
-  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/assets/Images/animals.png");
+  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/Images/png/animals.png");
   background-repeat: no-repeat;
   width: 584px;
   padding: 163px 10px 10px 10px;
@@ -404,7 +389,7 @@ a {
   gap: 40px;
 }
 .section1 .wrapper .wrap_4 .kid {
-  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/assets/Images/kid.png");
+  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/Images/png/kid.png");
   background-repeat: no-repeat;
   width: 272px;
   padding: 163px 10px 10px 10px;
@@ -420,7 +405,7 @@ a {
   line-height: 150%;
 }
 .section1 .wrapper .wrap_4 .sosages {
-  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/assets/Images/sosage.png");
+  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/Images/png/sosage.png");
   background-repeat: no-repeat;
   width: 584px;
   padding: 163px 10px 10px 10px;
@@ -436,7 +421,7 @@ a {
   line-height: 150%;
 }
 .section1 .wrapper .wrap_4 .cleaning {
-  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/assets/Images/cleaning.png");
+  background: linear-gradient(180deg, rgba(112, 192, 91, 0) 40%, #70C05B 82.81%), url("/Images/png/cleaning.png");
   background-repeat: no-repeat;
   width: 272px;
   padding: 136px 10px 10px 10px;
@@ -454,7 +439,7 @@ a {
 
 .footer {
   margin-top: 80px;
-  background-image: url("/assets/Images/footer-bg.png");
+  background-image: url("/Images/png/footer-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -530,7 +515,7 @@ a {
     border: 2px solid #70C05B;
     border-radius: 4px;
     background-color: white;
-    background-image: url("/assets/icons/search.svg");
+    background-image: url("/icons/search.svg");
     background-position: 290px 10px;
     background-repeat: no-repeat;
     padding: 12px 100px 12px 20px;
@@ -576,7 +561,7 @@ a {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url("/assets/icons/menu.svg");
+    background-image: url("/icons/menu.svg");
     background-size: cover;
     vertical-align: middle;
   }
@@ -604,7 +589,7 @@ a {
     border: 2px solid #70C05B;
     border-radius: 4px;
     background-color: white;
-    background-image: url("/assets/icons/search.svg");
+    background-image: url("/icons/search.svg");
     background-position: 160px 10px;
     background-repeat: no-repeat;
     padding: 8px 75px 8px 20px;
@@ -636,7 +621,7 @@ a {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url("/assets/icons/menu.svg");
+    background-image: url("/icons/menu.svg");
     background-size: cover;
     vertical-align: middle;
   }

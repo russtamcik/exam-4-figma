@@ -60,7 +60,7 @@ a {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-image: url("/assets/icons/menu.svg");
+  background-image: url("/icons/menu.svg");
   background-size: cover;
   margin-right: 10px;
   vertical-align: middle;
@@ -71,7 +71,7 @@ a {
   border: 2px solid #70C05B;
   border-radius: 4px;
   background-color: white;
-  background-image: url("/assets/icons/search.svg");
+  background-image: url("/icons/search.svg");
   background-position: 290px 10px;
   background-repeat: no-repeat;
   padding: 12px 100px 12px 20px;
@@ -113,6 +113,15 @@ a {
   align-items: center;
   gap: 6px;
 }
+.header .wrapper .icons .korz .cart {
+  position: absolute;
+  top: 4px;
+  right: 393px;
+  border-radius: 4px;
+  background: var(--main-primary, #F63);
+  padding: 1px 2px;
+  color: var(--main-on-primary, #FFF);
+}
 .header .wrapper .avatar {
   display: flex;
   align-items: center;
@@ -133,31 +142,7 @@ a {
   padding: 40px 116px;
   background-color: #fff;
 }
-.header .categori-menu .item {
-  display: flex;
-  gap: 40px;
-}
-.header .categori-menu .item .item1 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.header .categori-menu .item .item2 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.header .categori-menu .item .item3 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.header .categori-menu .item .item4 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.header .categori-menu p {
+.header .categori-menu a {
   color: var(--main-on-surface, #414141);
   font-family: Rubik;
   font-size: 16px;
@@ -167,12 +152,18 @@ a {
   cursor: pointer;
   transition: all 0.3s linear;
 }
-.header .categori-menu p:hover {
+.header .categori-menu a:hover {
   color: #FF6633;
 }
 
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
 .products-header {
-  margin-top: 44px;
+  margin-top: 75px;
 }
 .products-header h1 {
   color: var(--main-on-surface, #414141);
@@ -220,9 +211,20 @@ a {
 }
 .product-card .product-card-footer {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .product-card .product-card-footer h3 {
   margin-top: 8px;
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.product-card .product-card-footer h4 {
   color: var(--main-on-surface, #414141);
   font-family: Rubik;
   font-size: 16px;
@@ -257,6 +259,10 @@ a {
   cursor: pointer;
 }
 .product-card .product-card-footer button:hover {
+  background-color: #FF6633;
+  color: #fff;
+}
+.product-card .product-card-footer .active-cart {
   background-color: #FF6633;
   color: #fff;
 }

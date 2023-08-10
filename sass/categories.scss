@@ -65,7 +65,7 @@ a {
         display: inline-block;
         width: 24px;
         height: 24px;
-        background-image: url("/assets/icons/menu.svg");
+        background-image: url("/icons/menu.svg");
         background-size: cover;
         margin-right: 10px;
         vertical-align: middle;
@@ -79,7 +79,7 @@ a {
         border: 2px solid #70C05B;
         border-radius: 4px;
         background-color: white;
-        background-image: url("/assets/icons/search.svg");
+        background-image: url("/icons/search.svg");
         background-position: 290px 10px;
         background-repeat: no-repeat;
         padding: 12px 100px 12px 20px;
@@ -126,6 +126,17 @@ a {
         flex-direction: column;
         align-items: center;
         gap: 6px;
+
+
+        .cart {
+          position: absolute;
+          top: 4px;
+          right: 393px;
+          border-radius: 4px;
+          background: var(--main-primary, #F63);
+          padding: 1px 2px;
+          color: var(--main-on-primary, #FFF);
+        }
       }
     }
 
@@ -152,37 +163,7 @@ a {
     padding: 40px 116px;
     background-color: #fff;
 
-    .item {
-      display: flex;
-      gap: 40px;
-
-      .item1 {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-      }
-
-      .item2 {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-      }
-
-      .item3 {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-      }
-
-      .item4 {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-      }
-    }
-
-
-    p {
+    a {
       color: var(--main-on-surface, #414141);
       font-family: Rubik;
       font-size: 16px;
@@ -193,10 +174,11 @@ a {
       transition: all 0.3s linear;
     }
 
-    p:hover {
+    a:hover {
       color: #FF6633;
     }
   }
+
 
 }
 
@@ -343,15 +325,13 @@ a {
     }
 
     .right {
-      .discount-products-row {
-        margin-top: 40px;
+      .card-product {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
         gap: 40px;
 
         .product-card {
-          // width: 100%;
+          width: 100%;
           display: flex;
           flex-direction: column;
           align-items: flex-start;
@@ -376,9 +356,21 @@ a {
 
           .product-card-footer {
             padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
 
             h3 {
               margin-top: 8px;
+              color: var(--main-on-surface, #414141);
+              font-family: Rubik;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 150%;
+            }
+
+            h4 {
               color: var(--main-on-surface, #414141);
               font-family: Rubik;
               font-size: 16px;
@@ -423,166 +415,79 @@ a {
           }
         }
       }
-      .new-products-row {
-        margin-top: 40px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
+    }
+  }
+}
+
+.footer {
+  margin-top: 80px;
+  background-image: url("/Images/png/footer-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+  .footer_wrap {
+
+    .social {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      flex-wrap: wrap;
+
+      .info {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
         gap: 40px;
 
-        .product-card {
-          // width: 100%;
+        .info1 {
           display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          border-radius: 4px;
-          background: var(--main-surface, #FFF);
-          box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.10);
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 40px;
 
-          .product-card-body {
-            padding: 8px;
-            width: 100%;
-
-            h3 {
-              margin-top: 8px;
-              color: var(--main-on-surface, #414141);
-              font-family: Rubik;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 150%;
-            }
+          p {
+            color: var(--main-on-surface, #414141);
+            font-family: Rubik;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            transition: all 0.5s linear;
           }
 
-          .product-card-footer {
-            padding: 10px;
-
-            h3 {
-              margin-top: 8px;
-              color: var(--main-on-surface, #414141);
-              font-family: Rubik;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 150%;
-            }
-
-            p {
-              color: var(--grayscale-hardest, #606060);
-              font-family: Rubik;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 150%;
-            }
-
-            h3 a {
-              color: #414141;
-            }
-
-            button {
-              width: 256px;
-              padding: 8px;
-              background-color: #fff;
-              border: 1px solid #70C05B;
-              border-radius: 4px;
-              color: #70C05B;
-              font-family: Rubik;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 150%;
-              transition: all 0.5s linear;
-              cursor: pointer;
-            }
-
-            button:hover {
-              background-color: #FF6633;
-              color: #fff;
-            }
+          p:hover {
+            color: #F63;
           }
         }
       }
-      .popular-products-row {
-        margin-top: 40px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        gap: 40px;
 
-        .product-card {
-          // width: 100%;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          border-radius: 4px;
-          background: var(--main-surface, #FFF);
-          box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.10);
+      .social1 {
+        display: flex;
+        align-items: center;
+        gap: 16px;
 
-          .product-card-body {
-            padding: 8px;
-            width: 100%;
-
-            h3 {
-              margin-top: 8px;
-              color: var(--main-on-surface, #414141);
-              font-family: Rubik;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 150%;
-            }
-          }
-
-          .product-card-footer {
-            padding: 10px;
-
-            h3 {
-              margin-top: 8px;
-              color: var(--main-on-surface, #414141);
-              font-family: Rubik;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 150%;
-            }
-
-            p {
-              color: var(--grayscale-hardest, #606060);
-              font-family: Rubik;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 150%;
-            }
-
-            h3 a {
-              color: #414141;
-            }
-
-            button {
-              width: 256px;
-              padding: 8px;
-              background-color: #fff;
-              border: 1px solid #70C05B;
-              border-radius: 4px;
-              color: #70C05B;
-              font-family: Rubik;
-              font-size: 16px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 150%;
-              transition: all 0.5s linear;
-              cursor: pointer;
-            }
-
-            button:hover {
-              background-color: #FF6633;
-              color: #fff;
-            }
-          }
+        p {
+          color: var(--main-on-surface, #414141);
+          font-family: Rubik;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
         }
       }
+    }
+
+    .design {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 8px;
     }
   }
 }

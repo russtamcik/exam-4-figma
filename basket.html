@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sass/basket.css">
   <title>Корзина</title>
 </head>
+
 <body>
-  
+
+  <header class="header">
+    <div class="container">
+      <nav>
+        <div class="wrapper">
+          <div class="logo">
+            <a href="index.html"><img src="/icons/main-logo.svg" alt=""></a>
+            <a href="index.html"><img src="/icons/Северяночка.svg" alt=""></a>
+          </div>
+          <div class="btn">
+            <button class="dropbtn"><a href="categorie.html">Каталог</a></button>
+          </div>
+          <div class="poisk">
+            <input type="text" name="search" placeholder="Найти товар">
+          </div>
+          <div class="icons">
+            <div class="heart">
+              <a href="favorites.html"><img src="/icons/heart.svg" alt=""></a>
+              <p>Избранное</p>
+            </div>
+            <div class="prod">
+              <a href="all-product.html"><img src="/icons/box.svg" alt=""></a>
+              <p>Продукты</p>
+            </div>
+            <div class="korz">
+              <a href="basket.html"><img src="/icons/korzina.svg" alt=""></a>
+              <span class="cart">0</span>
+              <p>Корзина</p>
+            </div>
+          </div>
+          <div class="avatar">
+            <img src="/icons/avatar.svg" alt="">
+            <p>Алексей</p>
+          </div>
+          <img src="/icons/strelka.svg" alt="">
+        </div>
+        <div class="categori-menu">
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="page">
+    <div class="container">
+      <div class="page_1">
+        <a href="index.html">
+          <p>Главная</p>
+        </a>
+        <img src="/icons/strelka-right.svg" alt="">
+        <a href="basket.html"><span>Корзина</span></a>
+      </div>
+      <div class="h1">
+        <h1>Корзина</h1>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section>
+      <div class="container cart-container">
+      </div>
+    </section>
+  </main>
+
+  <script src="js/categories-data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
 </body>
+
 </html>

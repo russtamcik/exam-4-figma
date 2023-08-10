@@ -6,7 +6,10 @@ const tabContents = document.querySelectorAll('.tab-content')
 
 
 
-function getProductCard(products){
+function getProductCard({id, images, name, category, description, price}){
+
+  let check = cart.find((pr) => pr.id === id)
+
   const productCard = document.createElement('div')
   productCard.className = 'product-card'
 
@@ -14,30 +17,38 @@ function getProductCard(products){
   productCardBody.className = 'product-card-body'
   
   const productImg = document.createElement('img')
-  productImg.src = products.images[0]
-  productImg.alt = products.name
+  productImg.src = images[0]
+  productImg.alt = name
   
   productCardBody.appendChild(productImg)
+
+
   
   const productCardFooter = document.createElement('div')
   productCardFooter.className = 'product-card-footer'
   
-
   const productTitle = document.createElement('h3')
   // const productTitleText = document.createTextNode(products.name)
   
   // productTitle.appendChild(productTitleText)
 
-  productTitle.innerHTML = `<a href = 'product.html'>${products.name}</a>`
+  productTitle.innerHTML = `<a href = "categories.html?category=${category}">${name}</a>`
+
+  const productDesc = document.createElement('h4')
+  productDesc.innerHTML = description
   
   const productPrice = document.createElement('p')
-  productPrice.innerHTML = products.price
+  productPrice.innerHTML = `${price} $`
   
   const productBtn = document.createElement('button')
+  productBtn.className = check ? 'active-cart' : ''
   productBtn.innerHTML = 'Add to the cart'
-  
+
+  productBtn.addEventListener('click', () => addToCard(id))
+
   productCardFooter.prepend(productBtn)
   productCardFooter.prepend(productPrice)
+  productCardFooter.prepend(productDesc)
   productCardFooter.prepend(productTitle)
   
   productCard.append(productCardBody, productCardFooter)
@@ -45,31 +56,65 @@ function getProductCard(products){
   return productCard
 }
 
+
+function addToCard(id){
+  let product = products.find((pr) => pr.id === id)
+  let check = cart.find((pr) => pr.id === id)
+
+  if(check){
+    cart = cart.map((pr) =>{
+      if(pr.id === id){
+        pr.quantity++
+      }
+      return pr
+    })
+  }else{
+    product.quantity = 1
+    cart.push(product)
+  }
+  localStorage.setItem('cart', JSON.stringify(cart))
+  getProducts()
+  getCartTotal()
+}
+
+
 // products.map((products) => {
 //   let card = getProductCard(products)
 //   getProductCard.append(card)
 // })   
 
-let discountProducts = products.filter((pr) => pr.discount).slice(-4)
+function getProducts(){
+  let discountProducts = products.filter((pr) => pr.discount).slice(-4)
 
-discountProducts.map((product) => {
-  let card = getProductCard(product)
-  discountProductRow.append(card)
-})
+  discountProductRow.innerHTML = ''
 
-let newProducts = products.slice(-4)
+  discountProducts.map((product) => {
+    let card = getProductCard(product)
+    discountProductRow.append(card)
+  })
 
-newProducts.map((product) => {
-  let card = getProductCard(product)
-  newProductRow.append(card)
-})
+  let newProducts = products.slice(-4)
 
-let popularProducts = products.toSorted((a, b) => a.rating - b.rating).slice(-4)
+  newProductRow.innerHTML = ''
 
-popularProducts.map((product) => {
-  let card = getProductCard(product)
-  popularProductRow.append(card)
-})
+  newProducts.map((product) => {
+    let card = getProductCard(product)
+    newProductRow.append(card)
+  })
+
+  let popularProducts = products.toSorted((a, b) => a.rating - b.rating).slice(-4)
+
+  popularProductRow.innerHTML = ''
+
+  popularProducts.map((product) => {
+    let card = getProductCard(product)
+    popularProductRow.append(card)
+  })
+}
+
+getProducts()
+
+
 
 let active = 0
 
@@ -95,21 +140,4 @@ tabButtons.forEach((el, i) => {
   })
 })
 
-let articles = [
-  {
-    title: '',
-    description: '',
-    image: '../assets/images/articles/1.png'
-  },  
-  {
-    title: '',
-    description: '',
-    image: '../assets/images/articles/2.png'
-  },
-  {
-    title: '',
-    description: '',
-    image: '../assets/images/articles/3.png'
-  }
-]
   

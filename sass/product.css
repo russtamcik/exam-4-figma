@@ -60,7 +60,7 @@ a {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-image: url("/assets/icons/menu.svg");
+  background-image: url("/icons/menu.svg");
   background-size: cover;
   margin-right: 10px;
   vertical-align: middle;
@@ -71,7 +71,7 @@ a {
   border: 2px solid #70C05B;
   border-radius: 4px;
   background-color: white;
-  background-image: url("/assets/icons/search.svg");
+  background-image: url("/icons/search.svg");
   background-position: 290px 10px;
   background-repeat: no-repeat;
   padding: 12px 100px 12px 20px;
@@ -113,6 +113,15 @@ a {
   align-items: center;
   gap: 6px;
 }
+.header .wrapper .icons .korz .cart {
+  position: absolute;
+  top: 4px;
+  right: 393px;
+  border-radius: 4px;
+  background: var(--main-primary, #F63);
+  padding: 1px 2px;
+  color: var(--main-on-primary, #FFF);
+}
 .header .wrapper .avatar {
   display: flex;
   align-items: center;
@@ -133,31 +142,7 @@ a {
   padding: 40px 116px;
   background-color: #fff;
 }
-.header .categori-menu .item {
-  display: flex;
-  gap: 40px;
-}
-.header .categori-menu .item .item1 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.header .categori-menu .item .item2 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.header .categori-menu .item .item3 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.header .categori-menu .item .item4 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.header .categori-menu p {
+.header .categori-menu a {
   color: var(--main-on-surface, #414141);
   font-family: Rubik;
   font-size: 16px;
@@ -167,7 +152,7 @@ a {
   cursor: pointer;
   transition: all 0.3s linear;
 }
-.header .categori-menu p:hover {
+.header .categori-menu a:hover {
   color: #FF6633;
 }
 
@@ -1369,7 +1354,7 @@ a {
 
 .footer {
   margin-top: 80px;
-  background-image: url(/assets/Images/footer-bg.png);
+  background-image: url("/Images/png/footer-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1487,7 +1472,7 @@ a {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url("/assets/icons/menu.svg");
+    background-image: url("/icons/menu.svg");
     background-size: cover;
     margin-right: 1px;
     vertical-align: middle;
@@ -1530,7 +1515,7 @@ a {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url("/assets/icons/menu.svg");
+    background-image: url("/icons/menu.svg");
     background-size: cover;
     margin-right: 10px;
     vertical-align: middle;
@@ -1541,7 +1526,7 @@ a {
     border: 2px solid #70C05B;
     border-radius: 4px;
     background-color: white;
-    background-image: url("/assets/icons/search.svg");
+    background-image: url("/icons/search.svg");
     background-position: 170px 10px;
     background-repeat: no-repeat;
     padding: 8px;
@@ -1601,7 +1586,7 @@ a {
     border: 2px solid #70C05B;
     border-radius: 4px;
     background-color: white;
-    background-image: url("/assets/icons/search.svg");
+    background-image: url("/icons/search.svg");
     background-position: 220px 10px;
     background-repeat: no-repeat;
     padding: 8px;
@@ -1617,7 +1602,7 @@ a {
   .footer2 {
     display: block;
     margin-top: 40px;
-    background-image: url(/assets/Images/footer-bg.png);
+    background-image: url("/Images/png/footer-bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

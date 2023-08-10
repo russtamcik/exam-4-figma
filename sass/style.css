@@ -60,7 +60,7 @@ a {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-image: url("/assets/icons/menu.svg");
+  background-image: url("/icons/menu.svg");
   background-size: cover;
   margin-right: 10px;
   vertical-align: middle;
@@ -71,7 +71,7 @@ a {
   border: 2px solid #70C05B;
   border-radius: 4px;
   background-color: white;
-  background-image: url("/assets/icons/search.svg");
+  background-image: url("/icons/search.svg");
   background-position: 290px 10px;
   background-repeat: no-repeat;
   padding: 12px 100px 12px 20px;
@@ -112,6 +112,16 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 6px;
+  margin-bottom: 25px;
+}
+.header .wrapper .icons .korz .cart {
+  position: relative;
+  top: 10px;
+  left: 3px;
+  border-radius: 4px;
+  background: var(--main-primary, #F63);
+  padding: 1px 2px;
+  color: var(--main-on-primary, #FFF);
 }
 .header .wrapper .avatar {
   display: flex;
@@ -133,31 +143,7 @@ a {
   padding: 40px 116px;
   background-color: #fff;
 }
-.header .categori-menu .item {
-  display: flex;
-  gap: 40px;
-}
-.header .categori-menu .item .item1 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.header .categori-menu .item .item2 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.header .categori-menu .item .item3 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.header .categori-menu .item .item4 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.header .categori-menu p {
+.header .categori-menu a {
   color: var(--main-on-surface, #414141);
   font-family: Rubik;
   font-size: 16px;
@@ -167,8 +153,13 @@ a {
   cursor: pointer;
   transition: all 0.3s linear;
 }
-.header .categori-menu p:hover {
+.header .categori-menu a:hover {
   color: #FF6633;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
 }
 
 .header2 {
@@ -180,7 +171,8 @@ a {
 }
 
 .section1 {
-  background-image: url("/assets/Images/rangba-rang.png");
+  padding-top: 70px;
+  background-image: url("/Images/png/rangba-rang.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -240,6 +232,7 @@ a {
   gap: 40px;
 }
 .discount-products-row .product-card {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -262,9 +255,20 @@ a {
 }
 .discount-products-row .product-card .product-card-footer {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .discount-products-row .product-card .product-card-footer h3 {
   margin-top: 8px;
+  color: var(--main-on-surface, #000);
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.discount-products-row .product-card .product-card-footer h4 {
   color: var(--main-on-surface, #414141);
   font-family: Rubik;
   font-size: 16px;
@@ -302,20 +306,15 @@ a {
   background-color: #FF6633;
   color: #fff;
 }
+.discount-products-row .product-card .product-card-footer .active-cart {
+  background-color: #FF6633;
+  color: #fff;
+}
 
 .products-row {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-}
-
-.section3 .card {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  gap: 40px;
+  width: 100%;
 }
 
 .section4 .wrap {
@@ -375,12 +374,6 @@ a {
   font-weight: 400;
   line-height: 150%;
 }
-.new-products-row .product-card .product-card-body .rating {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
 .new-products-row .product-card .product-card-body .btn {
   margin-top: 8px;
 }
@@ -405,9 +398,20 @@ a {
 }
 .new-products-row .product-card .product-card-footer {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .new-products-row .product-card .product-card-footer h3 {
   margin-top: 8px;
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.new-products-row .product-card .product-card-footer h4 {
   color: var(--main-on-surface, #414141);
   font-family: Rubik;
   font-size: 16px;
@@ -446,308 +450,6 @@ a {
   color: #fff;
 }
 
-.section5 .card {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  gap: 40px;
-}
-.section5 .card .card1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border-radius: 4px;
-  background: var(--main-surface, #FFF);
-  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
-}
-.section5 .card .card1 .wrap {
-  padding: 8px;
-}
-.section5 .card .card1 .wrap .yoz {
-  display: flex;
-  gap: 120px;
-}
-.section5 .card .card1 .wrap .yoz .yozuvla .yozuv {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.section5 .card .card1 .wrap .yoz .yozuvla .yozuv h2 {
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-}
-.section5 .card .card1 .wrap .yoz .yozuvla .yozuv p {
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-}
-.section5 .card .card1 .wrap h3 {
-  margin-top: 8px;
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-}
-.section5 .card .card1 .wrap .rating {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.section5 .card .card1 .wrap .btn {
-  margin-top: 8px;
-}
-.section5 .card .card1 .wrap .btn button {
-  width: 100%;
-  padding: 8px;
-  background-color: #fff;
-  border: 1px solid #70C05B;
-  border-radius: 4px;
-  color: #70C05B;
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  transition: all 0.5s linear;
-  cursor: pointer;
-}
-.section5 .card .card1 .wrap .btn button:hover {
-  background-color: #FF6633;
-  color: #fff;
-}
-.section5 .card .card2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border-radius: 4px;
-  background: var(--main-surface, #FFF);
-  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
-}
-.section5 .card .card2 .wrap {
-  padding: 8px;
-}
-.section5 .card .card2 .wrap .yoz {
-  display: flex;
-  gap: 120px;
-}
-.section5 .card .card2 .wrap .yoz .yozuvla .yozuv {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.section5 .card .card2 .wrap .yoz .yozuvla .yozuv h2 {
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-}
-.section5 .card .card2 .wrap .yoz .yozuvla .yozuv p {
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-}
-.section5 .card .card2 .wrap h3 {
-  margin-top: 8px;
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-}
-.section5 .card .card2 .wrap .rating {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.section5 .card .card2 .wrap .btn {
-  margin-top: 8px;
-}
-.section5 .card .card2 .wrap .btn button {
-  width: 100%;
-  padding: 8px;
-  background-color: #fff;
-  border: 1px solid #70C05B;
-  border-radius: 4px;
-  color: #70C05B;
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  transition: all 0.5s linear;
-  cursor: pointer;
-}
-.section5 .card .card2 .wrap .btn button:hover {
-  background-color: #FF6633;
-  color: #fff;
-}
-.section5 .card .card3 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border-radius: 4px;
-  background: var(--main-surface, #FFF);
-  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
-}
-.section5 .card .card3 .wrap {
-  padding: 8px;
-}
-.section5 .card .card3 .wrap .yoz {
-  display: flex;
-  gap: 120px;
-}
-.section5 .card .card3 .wrap .yoz .yozuvla .yozuv {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.section5 .card .card3 .wrap .yoz .yozuvla .yozuv h2 {
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-}
-.section5 .card .card3 .wrap .yoz .yozuvla .yozuv p {
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-}
-.section5 .card .card3 .wrap h3 {
-  margin-top: 8px;
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-}
-.section5 .card .card3 .wrap .rating {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.section5 .card .card3 .wrap .btn {
-  margin-top: 8px;
-}
-.section5 .card .card3 .wrap .btn button {
-  width: 100%;
-  padding: 8px;
-  background-color: #fff;
-  border: 1px solid #70C05B;
-  border-radius: 4px;
-  color: #70C05B;
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  transition: all 0.5s linear;
-  cursor: pointer;
-}
-.section5 .card .card3 .wrap .btn button:hover {
-  background-color: #FF6633;
-  color: #fff;
-}
-.section5 .card .card4 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border-radius: 4px;
-  background: var(--main-surface, #FFF);
-  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
-}
-.section5 .card .card4 .wrap {
-  padding: 8px;
-}
-.section5 .card .card4 .wrap .yoz {
-  display: flex;
-  gap: 120px;
-}
-.section5 .card .card4 .wrap .yoz .yozuvla .yozuv {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.section5 .card .card4 .wrap .yoz .yozuvla .yozuv h2 {
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-}
-.section5 .card .card4 .wrap .yoz .yozuvla .yozuv p {
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-}
-.section5 .card .card4 .wrap h3 {
-  margin-top: 8px;
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-}
-.section5 .card .card4 .wrap .rating {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.section5 .card .card4 .wrap .btn {
-  margin-top: 8px;
-}
-.section5 .card .card4 .wrap .btn button {
-  width: 100%;
-  padding: 8px;
-  background-color: #fff;
-  border: 1px solid #70C05B;
-  border-radius: 4px;
-  color: #70C05B;
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  transition: all 0.5s linear;
-  cursor: pointer;
-}
-.section5 .card .card4 .wrap .btn button:hover {
-  background-color: #FF6633;
-  color: #fff;
-}
-
 .section6 .wrap {
   display: flex;
   align-items: center;
@@ -775,104 +477,6 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-}
-.section6 .new2 {
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  gap: 40px;
-}
-.section6 .new2 .product-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border-radius: 4px;
-  background: var(--main-surface, #FFF);
-  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
-}
-.section6 .new2 .product-card .product-card-body {
-  padding: 8px;
-  width: 100%;
-}
-.section6 .new2 .product-card .product-card-body h3 {
-  margin-top: 8px;
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-}
-.section6 .new2 .product-card .product-card-body .rating {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.section6 .new2 .product-card .product-card-body .btn {
-  margin-top: 8px;
-}
-.section6 .new2 .product-card .product-card-body .btn button {
-  width: 100%;
-  padding: 8px;
-  background-color: #fff;
-  border: 1px solid #70C05B;
-  border-radius: 4px;
-  color: #70C05B;
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  transition: all 0.5s linear;
-  cursor: pointer;
-}
-.section6 .new2 .product-card .product-card-body .btn button:hover {
-  background-color: #FF6633;
-  color: #fff;
-}
-.section6 .new2 .product-card .product-card-footer {
-  padding: 10px;
-}
-.section6 .new2 .product-card .product-card-footer h3 {
-  margin-top: 8px;
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-}
-.section6 .new2 .product-card .product-card-footer p {
-  color: var(--grayscale-hardest, #606060);
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-}
-.section6 .new2 .product-card .product-card-footer h3 a {
-  color: #414141;
-}
-.section6 .new2 .product-card .product-card-footer button {
-  width: 256px;
-  padding: 8px;
-  background-color: #fff;
-  border: 1px solid #70C05B;
-  border-radius: 4px;
-  color: #70C05B;
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  transition: all 0.5s linear;
-  cursor: pointer;
-}
-.section6 .new2 .product-card .product-card-footer button:hover {
-  background-color: #FF6633;
-  color: #fff;
 }
 
 .popular-products-row {
@@ -903,12 +507,6 @@ a {
   font-weight: 400;
   line-height: 150%;
 }
-.popular-products-row .product-card .product-card-body .rating {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
 .popular-products-row .product-card .product-card-body .btn {
   margin-top: 8px;
 }
@@ -933,9 +531,20 @@ a {
 }
 .popular-products-row .product-card .product-card-footer {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .popular-products-row .product-card .product-card-footer h3 {
   margin-top: 8px;
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.popular-products-row .product-card .product-card-footer h4 {
   color: var(--main-on-surface, #414141);
   font-family: Rubik;
   font-size: 16px;
@@ -970,306 +579,6 @@ a {
   cursor: pointer;
 }
 .popular-products-row .product-card .product-card-footer button:hover {
-  background-color: #FF6633;
-  color: #fff;
-}
-
-.section7 .card {
-  margin-top: 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-area: auto;
-  grid-gap: 40px;
-}
-.section7 .card .card1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border-radius: 4px;
-  background: var(--main-surface, #FFF);
-  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
-}
-.section7 .card .card1 .wrap {
-  padding: 8px;
-}
-.section7 .card .card1 .wrap .yoz {
-  display: flex;
-  gap: 120px;
-}
-.section7 .card .card1 .wrap .yoz .yozuvla .yozuv {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.section7 .card .card1 .wrap .yoz .yozuvla .yozuv h2 {
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-}
-.section7 .card .card1 .wrap .yoz .yozuvla .yozuv p {
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-}
-.section7 .card .card1 .wrap h3 {
-  margin-top: 8px;
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-}
-.section7 .card .card1 .wrap .rating {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.section7 .card .card1 .wrap .btn {
-  margin-top: 8px;
-}
-.section7 .card .card1 .wrap .btn button {
-  width: 100%;
-  padding: 8px;
-  background-color: #fff;
-  border: 1px solid #70C05B;
-  border-radius: 4px;
-  color: #70C05B;
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  transition: all 0.5s linear;
-  cursor: pointer;
-}
-.section7 .card .card1 .wrap .btn button:hover {
-  background-color: #FF6633;
-  color: #fff;
-}
-.section7 .card .card2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border-radius: 4px;
-  background: var(--main-surface, #FFF);
-  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
-}
-.section7 .card .card2 .wrap {
-  padding: 8px;
-}
-.section7 .card .card2 .wrap .yoz {
-  display: flex;
-  gap: 120px;
-}
-.section7 .card .card2 .wrap .yoz .yozuvla .yozuv {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.section7 .card .card2 .wrap .yoz .yozuvla .yozuv h2 {
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-}
-.section7 .card .card2 .wrap .yoz .yozuvla .yozuv p {
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-}
-.section7 .card .card2 .wrap h3 {
-  margin-top: 8px;
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-}
-.section7 .card .card2 .wrap .rating {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.section7 .card .card2 .wrap .btn {
-  margin-top: 8px;
-}
-.section7 .card .card2 .wrap .btn button {
-  width: 100%;
-  padding: 8px;
-  background-color: #fff;
-  border: 1px solid #70C05B;
-  border-radius: 4px;
-  color: #70C05B;
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  transition: all 0.5s linear;
-  cursor: pointer;
-}
-.section7 .card .card2 .wrap .btn button:hover {
-  background-color: #FF6633;
-  color: #fff;
-}
-.section7 .card .card3 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border-radius: 4px;
-  background: var(--main-surface, #FFF);
-  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
-}
-.section7 .card .card3 .wrap {
-  padding: 8px;
-}
-.section7 .card .card3 .wrap .yoz {
-  display: flex;
-  gap: 120px;
-}
-.section7 .card .card3 .wrap .yoz .yozuvla .yozuv {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.section7 .card .card3 .wrap .yoz .yozuvla .yozuv h2 {
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-}
-.section7 .card .card3 .wrap .yoz .yozuvla .yozuv p {
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-}
-.section7 .card .card3 .wrap h3 {
-  margin-top: 8px;
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-}
-.section7 .card .card3 .wrap .rating {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.section7 .card .card3 .wrap .btn {
-  margin-top: 8px;
-}
-.section7 .card .card3 .wrap .btn button {
-  width: 100%;
-  padding: 8px;
-  background-color: #fff;
-  border: 1px solid #70C05B;
-  border-radius: 4px;
-  color: #70C05B;
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  transition: all 0.5s linear;
-  cursor: pointer;
-}
-.section7 .card .card3 .wrap .btn button:hover {
-  background-color: #FF6633;
-  color: #fff;
-}
-.section7 .card .card4 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  border-radius: 4px;
-  background: var(--main-surface, #FFF);
-  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
-}
-.section7 .card .card4 .wrap {
-  padding: 8px;
-}
-.section7 .card .card4 .wrap .yoz {
-  display: flex;
-  gap: 120px;
-}
-.section7 .card .card4 .wrap .yoz .yozuvla .yozuv {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.section7 .card .card4 .wrap .yoz .yozuvla .yozuv h2 {
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-}
-.section7 .card .card4 .wrap .yoz .yozuvla .yozuv p {
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-}
-.section7 .card .card4 .wrap h3 {
-  margin-top: 8px;
-  color: var(--main-on-surface, #414141);
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-}
-.section7 .card .card4 .wrap .rating {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-.section7 .card .card4 .wrap .btn {
-  margin-top: 8px;
-}
-.section7 .card .card4 .wrap .btn button {
-  width: 100%;
-  padding: 8px;
-  background-color: #fff;
-  border: 1px solid #70C05B;
-  border-radius: 4px;
-  color: #70C05B;
-  font-family: Rubik;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  transition: all 0.5s linear;
-  cursor: pointer;
-}
-.section7 .card .card4 .wrap .btn button:hover {
   background-color: #FF6633;
   color: #fff;
 }
@@ -1594,7 +903,7 @@ a {
 
 .footer {
   margin-top: 80px;
-  background-image: url(/assets/Images/footer-bg.png);
+  background-image: url("/Images/png/footer-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1727,7 +1036,7 @@ a {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url("/assets/icons/menu.svg");
+    background-image: url("/icons/menu.svg");
     background-size: cover;
     margin-right: 1px;
     vertical-align: middle;
@@ -1791,7 +1100,7 @@ a {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url("/assets/icons/menu.svg");
+    background-image: url("/icons/menu.svg");
     background-size: cover;
     margin-right: 10px;
     vertical-align: middle;
@@ -1802,7 +1111,7 @@ a {
     border: 2px solid #70C05B;
     border-radius: 4px;
     background-color: white;
-    background-image: url("/assets/icons/search.svg");
+    background-image: url("/icons/search.svg");
     background-position: 170px 10px;
     background-repeat: no-repeat;
     padding: 8px;
@@ -1886,7 +1195,7 @@ a {
     border: 2px solid #70C05B;
     border-radius: 4px;
     background-color: white;
-    background-image: url("/assets/icons/search.svg");
+    background-image: url("/icons/search.svg");
     background-position: 220px 10px;
     background-repeat: no-repeat;
     padding: 8px;
@@ -1942,7 +1251,7 @@ a {
   .footer2 {
     display: block;
     margin-top: 40px;
-    background-image: url(/assets/Images/footer-bg.png);
+    background-image: url("/Images/png/footer-bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
