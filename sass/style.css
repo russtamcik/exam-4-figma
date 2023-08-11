@@ -112,12 +112,12 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 6px;
-  margin-bottom: 25px;
+  position: relative;
 }
 .header .wrapper .icons .korz .cart {
-  position: relative;
-  top: 10px;
-  left: 3px;
+  position: absolute;
+  bottom: 40px;
+  left: 35px;
   border-radius: 4px;
   background: var(--main-primary, #F63);
   padding: 1px 2px;
@@ -128,13 +128,16 @@ a {
   align-items: center;
   gap: 15px;
 }
-.header .wrapper .avatar p {
+.header .wrapper .avatar button {
   color: var(--on-surface, #232323);
   font-family: Rubik;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
 }
 .header .categori-menu {
   display: none;
@@ -268,7 +271,7 @@ a {
   font-weight: 400;
   line-height: 150%;
 }
-.discount-products-row .product-card .product-card-footer h4 {
+.discount-products-row .product-card .product-card-footer h4 a {
   color: var(--main-on-surface, #414141);
   font-family: Rubik;
   font-size: 16px;
@@ -411,7 +414,7 @@ a {
   font-weight: 400;
   line-height: 150%;
 }
-.new-products-row .product-card .product-card-footer h4 {
+.new-products-row .product-card .product-card-footer h4 a {
   color: var(--main-on-surface, #414141);
   font-family: Rubik;
   font-size: 16px;
@@ -548,7 +551,7 @@ a {
   font-weight: 400;
   line-height: 150%;
 }
-.popular-products-row .product-card .product-card-footer h4 {
+.popular-products-row .product-card .product-card-footer h4 a {
   color: var(--main-on-surface, #414141);
   font-family: Rubik;
   font-size: 16px;
@@ -974,6 +977,147 @@ a {
 
 .footer_header {
   display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(252, 213, 186, 0.8);
+  opacity: 0;
+  z-index: -1;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.modal .modal-content {
+  box-shadow: 8px 16px 32px 0px rgba(255, 102, 51, 0.2);
+  border-radius: 4px;
+  position: relative;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 50px;
+  transition: 0.5s;
+}
+.modal .modal-content .modal-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.modal .modal-content .login-form p {
+  color: var(--grayscale-hard, #8F8F8F);
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.modal .modal-content .login-form input {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--main-secondary, #70C05B);
+  background: var(--main-surface, #FFF);
+  box-shadow: 4px 8px 16px 0px rgba(112, 192, 91, 0.2);
+  color: var(--main-on-surface, #414141);
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.modal .modal-content .sign {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.modal .modal-content .sign button:nth-child(1) {
+  border-radius: 4px;
+  border: 1px solid var(--main-secondary, #70C05B);
+  color: var(--main-secondary, #70C05B);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  background-color: #fff;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.modal .modal-content .sign button:hover {
+  background-color: #70C05B;
+  color: #fff;
+}
+.modal .modal-content .sign button:nth-child(2) {
+  border: none;
+  background-color: #fff;
+  color: var(--grayscale-hardest, #606060);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  cursor: pointer;
+}
+.modal .modal-content .vxod {
+  margin-bottom: 32px;
+  color: var(--main-on-surface, #414141);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.modal .modal-content .enter {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background: var(--main-primary-muted, #FCD5BA);
+  color: var(--main-primary, #F63);
+  text-align: center;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+.modal .modal-content .enter:hover {
+  background-color: #FF6633;
+  color: #fff;
+}
+
+.modal-content-show {
+  top: 0;
+}
+
+.modal-show {
+  opacity: 1;
+  z-index: 1;
+}
+
+.menu-show {
+  left: 0;
 }
 
 @media (max-width: 1230px) {

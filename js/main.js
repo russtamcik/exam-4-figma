@@ -1,6 +1,10 @@
 const headerBtn = document.querySelector('.dropbtn')
 const headerMenuBtn = document.querySelector('.categori-menu')
 const cartTotal = document.querySelector('.cart')
+let loginBtn = document.querySelector('.login')
+let closeBtn = document.querySelector('.modal-close')
+let modal = document.querySelector('.modal')
+let modalContent = document.querySelector('.modal-content')
 
 headerBtn.addEventListener('click', function() {
   headerMenuBtn.style.display = headerMenuBtn.style.display === 'block' ? 'none' : 'block';
@@ -42,3 +46,25 @@ function getCartTotal(){
 }
 
 getCartTotal()
+
+
+
+loginBtn.addEventListener("click", () => {
+  modal.classList.add('modal-show')
+  modalContent.classList.add('modal-content-show')
+})
+
+closeBtn.addEventListener('click', () => {
+  closeModal()
+})
+
+window.addEventListener('click', (e) => {
+  if(e.target === modal ){
+    closeModal()
+  }
+})
+
+function closeModal(){
+  modal.classList.remove('modal-show')
+  modalContent.classList.remove('modal-content-show')
+}

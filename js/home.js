@@ -36,6 +36,8 @@ function getProductCard({id, images, name, category, description, price}){
 
   const productDesc = document.createElement('h4')
   productDesc.innerHTML = description
+  productDesc.innerHTML = `<a href = "product.html?product=${id}">${description}</a>`
+
   
   const productPrice = document.createElement('p')
   productPrice.innerHTML = `${price} $`

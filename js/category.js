@@ -24,14 +24,16 @@ function cardProduct(products){
   
 
   const productTitle = document.createElement('h3')
-  // const productTitleText = document.createTextNode(products.name)
+  const productTitleText = document.createTextNode(products.name)
   
-  // productTitle.appendChild(productTitleText)
+  productTitle.appendChild(productTitleText)
 
-  productTitle.innerHTML = `<a href = 'product.html'>${products.name}</a>`
+  // productTitle.innerHTML = `<a href = 'product.html'>${products.name}</a>`
 
   const productDesc = document.createElement('h4')
   productDesc.innerHTML = products.description
+  productDesc.innerHTML = `<a href = 'product.html'>${products.description}</a>`
+
   
   const productPrice = document.createElement('p')
   productPrice.innerHTML = `${products.price} $`
